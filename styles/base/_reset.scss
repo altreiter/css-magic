@@ -1,0 +1,66 @@
+/*******
+  root
+ ******/
+
+* {
+    font: inherit;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+::before,
+::after {
+    text-decoration: inherit;
+    vertical-align: inherit;
+}
+
+/***********
+  margins
+  paddings
+ **********/
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+/*********
+  hovers
+ ********/
+
+a,
+button,
+input[type="submit"] {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+/**************
+  decorations
+ *************/
+
+a,
+button,
+input,
+select,
+textarea {
+    background: none;
+    border: none;
+    text-transform: none;
+
+    &:focus {
+        outline: none;
+    }
+}

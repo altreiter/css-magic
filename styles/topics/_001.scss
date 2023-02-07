@@ -1,0 +1,60 @@
+.inline, .block, .inset {
+    padding: .25rem;
+    margin: 1rem 0;
+    border-radius: .25rem
+}
+
+.inline {
+    
+    // border: 2px solid red;
+    // width: 500px;
+    // padding-left: 2rem; 
+    // padding-right: 2rem;
+    // border-left-width: 4px;
+    // border-right-width: 4px;
+
+    border: 2px solid red;
+    inline-size: 500px;
+    padding-inline: 2rem;
+    border-inline-width: 4px;
+
+    border-width: 10px 1px;
+    writing-mode: vertical-rl;
+}
+
+.block {
+    
+    // border: 2px solid blue;
+    // height: 6rem;
+    // padding-top: .5rem; 
+    // padding-bottom: 1rem;
+    // border-top-width: 4px;
+    // border-bottom-width: 4px;
+    
+    border: 2px solid blue;
+    block-size: 6rem;
+    padding-block-start: .5rem;
+    padding-block-end: 1rem;
+    border-block-width: 4px;
+
+    // writing-mode: vertical-rl;
+}
+
+.inset {
+    border: 2px solid green;
+    position: relative;
+    height: 5rem;
+
+    .overlay {
+        position: absolute;
+        background: rgb(50% 50% 50% / 0.5);
+        border: 1px solid lightgreen;
+
+        // top: 0.25rem;
+        // left: 0.25rem;
+        // right: 0.25rem;
+        // bottom: 0.25rem;
+
+        inset: 0.25rem;
+    }
+}

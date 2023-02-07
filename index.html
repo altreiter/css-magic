@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/main.css">
+        <title>css-magic</title>
+    </head>
+    <body>
+
+        <h1>✨ CSS Magic ✨</h1>
+
+        <details title="001">   
+            <summary> 001 -- Logical Properties</summary>
+            <div class="details-content"> <!-- Demo Content -->
+
+                <div class="inline">Width vs Inline</div>
+                <div class="block">Height vs Block</div>
+                <div class="inset">
+                    <span>Inset</span>
+                    <div class="overlay"></div>
+                </div>
+
+            </div> <!-- End of Demo Content -->
+        </details>
+
+        <details title="002">   
+            <summary> 002 -- Logical Functions</summary>
+            <div class="details-content"> <!--Demo Content -->
+
+                <p class="min">min<p></p>
+                <p class="clamp">clamp<p>
+                <p class="max">max<p></p>
+
+            </div> <!--End ofDemo Content -->
+        </details>
+
+        <details title="003">   
+            <summary> 003 -- Grid Magic</summary>
+            <div class="details-content"> <!--Demo Content -->
+
+                <p>Autofit</p>
+                <div class="grid autofit">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
+
+                <p>Autofill</p>
+                <div class="grid autofill">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
+
+                <p>Stack</p>
+                <div class="grid stack">
+                    <img src="https://placekitten.com/120/120">
+                    <div>TEXT</div>
+                </div>
+
+            </div> <!--End ofDemo Content -->
+        </details>
+
+        <details title="004">   
+            <summary> 004 -- is - where - has
+                <div class="support"> Missing Support in Firefox for :has() </div>
+            </summary>
+            <div class="details-content"> <!--Demo Content -->
+
+                <p>Simple Pragraph</p>
+                <p> <span>Simple Pragraph</span> <em> - with highlight </em> </p>
+                <div class="p1">Div with class </div>
+                <section id="p2">Section with id </section>
+
+            </div> <!--End ofDemo Content -->
+        </details>
+
+        <details title="005">   
+            <summary> 005 -- Advanced Viewport Units</summary>
+            <div class="details-content"> <!--Demo Content -->
+                <p class="vp"> <strong>*</strong> h, w, min, max, i, b </p>
+                <p class="vp"> <strong>v*</strong> old viewport units: not consitent</p>
+                <p class="vp"> <strong>sv*</strong> small viewport units: size when browser UI shown </p>
+                <p class="vp"> <strong>dv*</strong> dynamic viewport units: chanhing size if browser UI is hidden or shown</p>
+                <p class="vp"> <strong>lv*</strong> large viewport units: size when browser UI hidden </p>
+                <img src="images/vp.gif" width="320px">
+            </div> <!--End ofDemo Content -->
+        </details>
+
+        <details title="006">   
+            <summary> 006 -- Container Queries
+                <div class="support"> Missing Support in Firefox </div>
+            </summary>
+            <div class="details-content"> <!--Demo Content -->
+
+                <div class="container-grid">
+                    <div class="container">
+                        <div class="container-card container-query">
+                            <img src="https://placekitten.com/300/300" alt="">
+                            <div class="container-card-text">
+                                <h2>Lorem ipsum dolor sit.</h2>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, quam!</p>
+                            </div>                    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-card">
+                    <img src="https://placekitten.com/300/300" alt="">
+                    <div class="container-card-text">
+                        <h2>Lorem ipsum dolor sit.</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, quam!</p>
+                    </div>
+                </div>
+
+                <div class="search-result">
+                    <div class="avatar">A</div>
+                    <p> This is a Search Result </p>
+                    <div class="info"> 
+                        <em>Some additional Info goes here </em>
+                    </div>
+                </div>
+        
+               
+
+            </div> <!--End ofDemo Content -->
+        </details>
+
+        <details title="007">   
+
+            <summary> 007 -- Subgrid 
+                <div class="support"> Missing Support in Chrome & Edge </div>
+            </summary>
+            
+
+            <div class="details-content"> <!--Demo Content -->
+                <div class="subgrid-parent">
+                    <div class="row"> <span>Lorem, ipsum.</span> <span>Lorem, ipsum dolor. Lorem, ipsum dolor.</span> <span>Lorem, ipsum dolor.</span> </div>
+                    <div class="row"> <span>Lorem, ipsum.</span> <span>Lorem, ipsum dolor.</span> <span>Lorem, ipsum dolor. Lorem, ipsum dolor.</span> </div>
+                    <div class="row"> <span>Lorem</span> <span>Lorem, ipsum dolor. Lorem, ipsum dolor. Lorem, ipsum dolor.</span> <span>Lorem, ipsum dolor.</span> </div>
+                </div>
+                <p><a href="https://codepen.io/altreiter/pen/QWrbzGz">Subgrid table (Codepen)</a></p>
+
+
+            </div> <!--End ofDemo Content -->
+        </details>
+
+        <details title="008">   
+            <summary> 008 -- Tips & Tricks + Dos & Don'ts</summary>
+            <div class="details-content"> <!--Demo Content -->
+                <ul class="tips-list" >
+                    <li>scrollbar-gutter: stable </li>
+                    <li>prefers-color-scheme: dark light </li>
+                    <li class="maxmin">min-content vs. max-content </li>
+                    <li class="shorthands"> shorthands, ... </li>
+                    <li class="shorthands green"> ...shorthands everywhere </li>
+                    <li class="accent"> 
+                        <input type="radio" ckecked="true"> accent-color 
+                        <input type="checkbox" ckecked="true"> currentColor
+                    </li>
+                    <li>:element-state ::pseudo-element</li>
+                    <li> ::marker </li>
+                </ul>
+                <p>  </p>
+
+            </div> <!--End ofDemo Content -->
+        </details>
+
+        <details title="Sandbox">   
+
+            <summary> Sandbox </summary>
+            
+
+            <div class="details-content"> <!--Demo Content -->
+
+                <p>do stuff here</p>
+
+            </div> <!--End ofDemo Content -->
+        </details>
+
+        <details title="Links">   
+
+            <summary> Links </summary>
+            
+
+            <div class="details-content"> <!--Demo Content -->
+
+                <ul>
+                    <li><a href="https://www.bram.us/">Bramus Van Damme (CSS Working Group)</a></li>
+                    <li><a href="https://nerdy.dev/"> Adam Argyle (CSS Chrome DevRel) </a></li>
+                    <li><a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIAKIQFsNbV0JDws_G_bnNo9">HTTP 203 Podcast (Jake Archibald & Guests)</a></li>
+                    <li><a href="https://www.kevinpowell.co/">Kevin Powell (YouTube Tutorials)</a></li>
+                </ul>
+
+            </div> <!--End ofDemo Content -->
+        </details>
+
+    </body>
+</html>

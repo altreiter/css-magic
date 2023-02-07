@@ -1,0 +1,77 @@
+// ------------------- Base Styles  ------------------- //
+
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700,900");
+
+body,
+html {
+    min-height: 100%;
+    
+}
+
+body {
+    max-width: 1080px;
+    margin: auto;
+    padding-block: 2rem;
+    padding-inline: 2rem;
+}
+
+* {
+    font-family: Inconsolata, slab-serif;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 4rem;
+    font-size: clamp(1rem, 10vw, 4rem);
+    padding-block-start: 2rem;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+details {
+    margin-block: 2rem 1rem;
+
+    & > summary {
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 1.25rem;
+        list-style-type: "👉 ";
+        padding: 1rem;
+        user-select: none;
+        position: relative;
+
+        &:hover {
+            background: rgb(60% 60% 60% /.25);
+            border-radius: 8px;
+        }
+        .support {
+            display: none;
+        }
+    }
+
+    &[open] > summary {
+        list-style-type: "👇 ";
+        &::marker {
+            letter-spacing: .16em;
+        }
+
+        .support {
+            display: grid;
+            font-size: 1rem;
+            color: rgb(204, 0, 65);
+            place-items: center;
+            position: absolute;
+            inset: 0 1rem 0 auto;
+        }
+    }
+
+    .details-content {
+        border: 2px solid  rgb(60% 60% 60% /.25);
+        border-radius: 8px;
+        padding: .75rem 1.5rem;
+        margin-top: .5rem
+    }
+}

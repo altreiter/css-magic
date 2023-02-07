@@ -1,0 +1,37 @@
+.details-content:has(.clamp) {
+    resize: both;
+    overflow: auto;
+}
+
+.clamp, .min, .max {
+    padding: 1rem;
+    border-radius: .25rem
+}
+
+
+.min {
+    border: 2px solid sandybrown;
+    // width: 100%;
+    // max-width: 500px;
+    width: min(500px, 100%);
+}
+
+.max {
+    border: 2px solid slateblue;
+    width: max(500px, 100%);
+}
+
+.clamp {
+
+    border: 2px solid tomato;
+    width: clamp(500px, 100%, 800px);
+    // font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.details-content:has(.clamp) {
+    container: clamp / inline-size;
+}
+
+.clamp {
+    font-size: clamp(1rem, 5cqi, 2rem);
+}

@@ -1,0 +1,45 @@
+// ------ :is() :where() ------ 
+
+p, .p1, #p2 {
+    margin-block: 1rem;
+    // color: red;
+}
+
+// :where(p, .p1, #p2) {
+//     color: red;
+// }
+
+// p {
+//     color: blue
+// }
+
+p > em {
+    font-style: italic;
+    font-weight: 700;
+}
+
+
+// ------ :has() as parent selector ------ 
+// p:has(em){
+//     color: aqua
+// }
+
+// ------ :has() as sibling selector ------ 
+// p:has(em) > *:not(em){
+//     color: blueviolet
+// }
+
+// ------ :has() as previous sibling selector ------ 
+// :has( + #p2) {
+//     color: chartreuse
+// }
+
+// ------ :not(has:())  and :has() as sibling selector between 2 elements ------ 
+// p:not(:has(em)) ~ :has( ~ section) {
+//     color: darkgoldenrod
+// }
+
+// ------ counting children with :has() -> at least 4 children------ 
+// .details-content:has( > :nth-child(5)) > * {
+//     color: dodgerblue
+// }
